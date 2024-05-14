@@ -33,6 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
       body: FutureBuilder(
         future: newsData(),
         builder: (context, snapshot) {
+          // problem getting null data how to solve ?
           return ListView.builder(
             itemCount: snapshot.data!.articles!.length,
             itemBuilder: (BuildContext context, int index) {
